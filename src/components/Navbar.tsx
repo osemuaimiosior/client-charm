@@ -45,7 +45,7 @@ const Navbar = () => {
             <span className={`text-xl font-serif font-bold transition-colors ${
               isScrolled ? "text-foreground" : "text-primary-foreground"
             }`}>
-              Secooya
+              Dowie
             </span>
           </a>
 

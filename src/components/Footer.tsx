@@ -14,7 +14,7 @@ const Footer = () => {
                 <Leaf className="w-5 h-5 text-primary" />
               </div>
               <span className="text-2xl font-serif font-bold text-primary-foreground">
-                Secooya
+                Dowie
               </span>
             </div>
             <p className="text-primary-foreground/70 max-w-md mb-6">
@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-primary-foreground/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © {currentYear} Secooya. All rights reserved.
+              © {currentYear} Dowie. All rights reserved.
             </p>
             <p className="text-sm text-primary-foreground/60">
               Made with care in Nigeria 🇳🇬

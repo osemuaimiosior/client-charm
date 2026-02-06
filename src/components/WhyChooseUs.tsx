@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 text-gold text-sm font-medium mb-6">
               <Check className="w-4 h-4" />
-              Why Choose Secooya
+              Why Choose Dowie
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary-foreground mb-6">
               Built on Trust,{" "}
