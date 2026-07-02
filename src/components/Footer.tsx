@@ -1,5 +1,4 @@
 import { Linkedin, Twitter, Instagram } from "lucide-react";
-import logoAsset from "@/assets/dowie-logo.png.asset.json";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
