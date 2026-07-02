@@ -1,23 +1,23 @@
 import { motion } from "framer-motion";
-import { Users, ArrowRight, Tractor, Store, Building } from "lucide-react";
+import { Users, ArrowRight, UtensilsCrossed, Sparkles, Pill } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import farmImage from "@/assets/farm.jpg";
 
 const partners = [
   {
-    icon: Tractor,
-    title: "Farmers",
-    description: "Join our network of trusted paddy rice suppliers and get fair prices for your harvest.",
+    icon: UtensilsCrossed,
+    title: "Food & Beverage",
+    description: "Elevate your products with rice bran oil — a heart-healthy, high-performance oil rich in natural antioxidants.",
   },
   {
-    icon: Store,
-    title: "Distributors",
-    description: "Partner with us to bring premium rice ingredients to new markets across Africa.",
+    icon: Sparkles,
+    title: "Cosmetics & Personal Care",
+    description: "Formulate with gamma oryzanol and rice bran oil for their proven skin-brightening and anti-aging benefits.",
   },
   {
-    icon: Building,
-    title: "Brands",
-    description: "Let us help you create clean-label products with our high-quality ingredients.",
+    icon: Pill,
+    title: "Pharma & Nutraceuticals",
+    description: "Access pharma-grade gamma oryzanol for cholesterol management, antioxidant, and wellness formulations.",
   },
 ];
 
@@ -45,16 +45,16 @@ const PartnerCTA = () => {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 text-gold text-sm font-medium mb-6">
               <Users className="w-4 h-4" />
-              Grow With Us
+              Industries We Serve
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-primary-foreground mb-6">
-              Building Nigeria's{" "}
-              <span className="text-gradient-gold">Agricultural Future</span>
+              Powering Global{" "}
+              <span className="text-gradient-gold">Formulations</span>
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
-              We're always looking to expand our network of partners who share 
-              our commitment to quality and sustainability. Whether you're a 
-              farmer, distributor, or brand, we'd love to hear from you.
+              From functional foods to premium cosmetics and pharmaceutical
+              actives, Dowie's bioactive rice ingredients help brands deliver
+              proven benefits their customers can feel.
             </p>
             <Button variant="hero" size="lg" className="group">
               Get In Touch

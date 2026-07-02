@@ -5,22 +5,22 @@ const reasons = [
   {
     icon: Shield,
     title: "Quality Assured",
-    description: "Every batch tested for purity, protein content, and safety. We meet international food safety standards.",
+    description: "Every batch is tested for purity, potency, and safety — meeting food, cosmetic, and pharmaceutical-grade standards.",
   },
   {
     icon: Award,
-    title: "Clean Label",
-    description: "No additives, no preservatives. Pure rice-derived ingredients your customers can trust.",
+    title: "Bioactive-Rich",
+    description: "Our rice bran oil and gamma oryzanol are refined to preserve the natural bioactives that give them their power.",
   },
   {
     icon: Truck,
     title: "Reliable Supply",
-    description: "Direct relationships with 500+ farmers ensure consistent, year-round supply for your operations.",
+    description: "Vertically integrated sourcing and processing ensures consistent, scalable supply for global manufacturers.",
   },
   {
     icon: Handshake,
     title: "Partnership First",
-    description: "We work closely with brands to customize solutions that meet your specific formulation needs.",
+    description: "We collaborate closely with food, cosmetic, and pharma brands to tailor specifications to your formulation.",
   },
 ];
 
@@ -45,17 +45,18 @@ const WhyChooseUs = () => {
               <span className="text-gradient-gold">Driven by Quality</span>
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
-              We bridge the gap between Nigeria's rich agricultural heritage and 
-              the global demand for clean-label, plant-based ingredients. Our 
-              vertically integrated model ensures quality from farm to factory.
+              Dowie bridges the gap between Nigeria's agricultural heritage and
+              the global demand for high-value bioactive ingredients. From rice
+              bran to refined oil and gamma oryzanol, our integrated process
+              guarantees consistency at every step.
             </p>
 
             <div className="space-y-4">
               {[
-                "Traceable supply chain from farm to factory",
-                "State-of-the-art processing facility",
-                "Dedicated quality control at every stage",
-                "Custom formulation support",
+                "Traceable supply chain from paddy to finished ingredient",
+                "Modern extraction and refining facility",
+                "Rigorous quality control for food, cosmetic & pharma use",
+                "Custom specifications and formulation support",
               ].map((item, index) => (
                 <motion.div
                   key={index}
