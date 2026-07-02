@@ -18,8 +18,9 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-primary-foreground/70 max-w-md mb-6">
-              Transforming Nigerian rice into world-class proteins and starches. 
-              Clean-label ingredients that brands and consumers trust.
+              Producing high-quality bioactive ingredients derived from rice —
+              including rice bran oil and gamma oryzanol — for the global food,
+              cosmetic, and pharmaceutical industries.
             </p>
             <div className="flex gap-4">
               {[Linkedin, Twitter, Instagram].map((Icon, index) => (

@@ -25,8 +25,8 @@ const Contact = () => {
               <span className="text-gradient-gold">Conversation</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10">
-              Ready to explore how Secooya can support your ingredient needs? 
-              Reach out to our team and let's discuss how we can work together.
+              Ready to explore how Dowie's rice bran oil and gamma oryzanol can
+              elevate your formulations? Reach out and our team will get back to you.
             </p>
 
             {/* Contact Details */}
