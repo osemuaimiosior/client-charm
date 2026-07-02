@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Leaf, Shield, Beaker, Users } from "lucide-react";
+import { ArrowRight, Leaf, Shield, Beaker, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-rice.jpg";
 
@@ -27,7 +27,7 @@ const Hero = () => {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 text-gold border border-gold/30 text-sm font-medium">
               <Leaf className="w-4 h-4" />
-              Clean-Label Ingredients
+              Bioactive Rice Ingredients
             </span>
           </motion.div>
 
@@ -37,8 +37,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-primary-foreground leading-tight mb-6"
           >
-            From Grain to{" "}
-            <span className="text-gradient-gold">Innovation</span>
+            The Science of Rice,{" "}
+            <span className="text-gradient-gold">Refined</span>
           </motion.h1>
 
           <motion.p
@@ -47,9 +47,9 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl"
           >
-            Nigeria's trusted partner in transforming locally-sourced rice into 
-            premium proteins and starches. Clean-label ingredients that brands 
-            and consumers can trust.
+            Dowie produces high-quality bioactive ingredients derived from rice —
+            including premium rice bran oil and gamma oryzanol — for the global
+            food, cosmetic, and pharmaceutical industries.
           </motion.p>
 
           <motion.div
@@ -59,11 +59,11 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <Button variant="hero" size="lg" className="group">
-              Explore Our Products
+              Explore Our Ingredients
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="heroOutline" size="lg">
-              Partner With Us
+              Request a Sample
             </Button>
           </motion.div>
 
@@ -76,10 +76,10 @@ const Hero = () => {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
-                { icon: Shield, label: "Quality Certified", value: "ISO 22000" },
-                { icon: Beaker, label: "Protein Content", value: "80%+" },
-                { icon: Users, label: "Partner Farmers", value: "500+" },
-                { icon: Leaf, label: "Sustainable", value: "100%" },
+                { icon: Shield, label: "Food Safety", value: "ISO 22000" },
+                { icon: Beaker, label: "Gamma Oryzanol", value: "98%+" },
+                { icon: Globe, label: "Global Reach", value: "3 Industries" },
+                { icon: Leaf, label: "Naturally Sourced", value: "100%" },
               ].map((stat, index) => (
                 <div key={index} className="text-center md:text-left">
                   <stat.icon className="w-5 h-5 text-gold mx-auto md:mx-0 mb-2" />

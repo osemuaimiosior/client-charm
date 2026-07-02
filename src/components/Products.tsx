@@ -1,24 +1,28 @@
 import { motion } from "framer-motion";
-import { Droplets, Leaf, Beaker, Package } from "lucide-react";
+import { Droplet, Leaf, FlaskConical, Package } from "lucide-react";
 import processingImage from "@/assets/processing.jpg";
 import proteinImage from "@/assets/protein-powder.jpg";
 
 const products = [
   {
-    icon: Beaker,
-    title: "Rice Protein",
-    description: "High-quality, clean-label rice protein with 80%+ protein content. Perfect for plant-based nutrition and sports supplements.",
-    image: proteinImage,
-    features: ["80%+ Protein", "Allergen-Free", "Neutral Taste"],
+    icon: Droplet,
+    title: "Rice Bran Oil",
+    description:
+      "A premium, heart-healthy oil extracted from rice bran. Rich in natural antioxidants and tocotrienols — ideal for cooking oils, functional foods, and cosmetic formulations.",
+    image: processingImage,
+    features: ["Heart-Healthy", "High Smoke Point", "Antioxidant-Rich"],
   },
   {
-    icon: Droplets,
-    title: "Rice Starch",
-    description: "Premium native and modified rice starches for food, pharmaceutical, and industrial applications.",
-    image: processingImage,
-    features: ["High Purity", "Clean Label", "Versatile"],
+    icon: FlaskConical,
+    title: "Gamma Oryzanol",
+    description:
+      "A powerful bioactive compound unique to rice bran, prized for its antioxidant, cholesterol-lowering, and skin-protective properties across pharma, nutraceuticals, and cosmetics.",
+    image: proteinImage,
+    features: ["98%+ Purity", "Pharma-Grade", "Bioactive"],
   },
 ];
+
+const industries = ["Food & Beverage", "Cosmetics & Personal Care", "Pharmaceuticals & Nutraceuticals"];
 
 const Products = () => {
   return (
@@ -34,15 +38,16 @@ const Products = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             <Package className="w-4 h-4" />
-            Our Products
+            Our Ingredients
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
-            Premium Rice-Based{" "}
-            <span className="text-gradient-gold">Ingredients</span>
+            Bioactive Rice Ingredients{" "}
+            <span className="text-gradient-gold">for Every Industry</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From locally sourced Nigerian rice, we create world-class proteins and 
-            starches that meet the highest international standards.
+            We specialize in the manufacture of rice bran oil and gamma oryzanol —
+            two of nature's most versatile bioactives — refined to meet the highest
+            global standards.
           </p>
         </motion.div>
 
@@ -66,7 +71,7 @@ const Products = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     {product.features.map((feature) => (
                       <span
                         key={feature}
@@ -97,7 +102,7 @@ const Products = () => {
           ))}
         </div>
 
-        {/* Additional Info */}
+        {/* Industries served */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -105,9 +110,19 @@ const Products = () => {
           transition={{ duration: 0.6 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-2 text-sm text-muted-foreground">
-            <Leaf className="w-4 h-4 text-primary" />
-            All products are sustainably sourced and produced
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            Trusted across
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {industries.map((industry) => (
+              <span
+                key={industry}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-border text-foreground text-sm font-medium shadow-soft"
+              >
+                <Leaf className="w-4 h-4 text-primary" />
+                {industry}
+              </span>
+            ))}
           </div>
         </motion.div>
       </div>
