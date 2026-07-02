@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
@@ -37,16 +37,11 @@ const Navbar = () => {
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-colors ${
-              isScrolled ? "bg-primary" : "bg-gold"
-            }`}>
-              <Leaf className={`w-5 h-5 ${isScrolled ? "text-primary-foreground" : "text-primary"}`} />
-            </div>
-            <span className={`text-xl font-serif font-bold transition-colors ${
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            }`}>
-              Dowie
-            </span>
+            <img
+              src="/dowie-logo.png"
+              alt="Dowie"
+              className="h-10 w-auto rounded-full"
+            />
           </a>
 
           {/* Desktop Nav */}

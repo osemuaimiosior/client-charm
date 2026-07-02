@@ -1,4 +1,4 @@
-import { Leaf, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -10,12 +10,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-primary" />
-              </div>
-              <span className="text-2xl font-serif font-bold text-primary-foreground">
-                Dowie
-              </span>
+              <img
+                src="/dowie-logo.png"
+                alt="Dowie"
+                className="h-10 w-auto rounded-full"
+              />
             </div>
             <p className="text-primary-foreground/70 max-w-md mb-6">
               Producing high-quality bioactive ingredients derived from rice —
