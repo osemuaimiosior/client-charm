@@ -51,19 +51,19 @@ const Contact = () => {
                     href="mailto:info@secooya.com.ng" 
                     className="text-primary hover:text-gold transition-colors"
                   >
-                    info@secooya.com.ng
+                    info@dowie.com.ng
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                {/* <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-5 h-5 text-primary" />
-                </div>
-                <div>
+                </div> */}
+                {/* <div>
                   <h3 className="font-semibold text-foreground mb-1">Phone</h3>
                   <p className="text-muted-foreground">+234 (0) 000 000 0000</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </motion.div>
