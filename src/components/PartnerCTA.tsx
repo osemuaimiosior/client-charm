@@ -7,19 +7,20 @@ const partners = [
   {
     icon: UtensilsCrossed,
     title: "Food & Beverage",
-    description: "Elevate your products with rice bran oil — a heart-healthy, high-performance oil rich in natural antioxidants.",
+    description: "Rice bran oil, tocopherols, and phytosterols to fortify functional foods and heart-healthy formulations.",
   },
   {
     icon: Sparkles,
     title: "Cosmetics & Personal Care",
-    description: "Formulate with gamma oryzanol and rice bran oil for their proven skin-brightening and anti-aging benefits.",
+    description: "Gamma oryzanol, ferulic acid, and rice bran wax for anti-aging, photoprotective, and vegan formulations.",
   },
   {
     icon: Pill,
     title: "Pharma & Nutraceuticals",
-    description: "Access pharma-grade gamma oryzanol for cholesterol management, antioxidant, and wellness formulations.",
+    description: "Pharma-grade gamma oryzanol, tocopherols, and phytosterols for cholesterol, antioxidant, and wellness actives.",
   },
 ];
+
 
 const PartnerCTA = () => {
   return (
@@ -53,9 +54,10 @@ const PartnerCTA = () => {
             </h2>
             <p className="text-lg text-primary-foreground/80 mb-8">
               From functional foods to premium cosmetics and pharmaceutical
-              actives, Dowie's bioactive rice ingredients help brands deliver
-              proven benefits their customers can feel.
+              actives, Dowie's six bioactive rice ingredients help brands
+              deliver proven benefits their customers can feel.
             </p>
+
             <Button variant="hero" size="lg" className="group">
               Get In Touch
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
