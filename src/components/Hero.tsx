@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, Shield, Beaker, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-rice.jpg";
 
@@ -59,13 +60,17 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button variant="hero" size="lg" className="group">
-              Explore Our Ingredients
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="heroOutline" size="lg">
-              Request a Sample
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="lg" className="group">
+                Explore Our Ingredients
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <a href="#contact">
+              <Button variant="heroOutline" size="lg">
+                Request a Sample
+              </Button>
+            </a>
           </motion.div>
 
           {/* Trust Indicators */}

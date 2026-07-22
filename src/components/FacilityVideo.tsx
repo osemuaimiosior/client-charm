@@ -24,12 +24,13 @@ const FacilityVideo = () => {
             Inside Our Facility
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
-            Where Every Grain Becomes a{" "}
-            <span className="text-gradient-gold">Bioactive</span>
+            A Glimpse Inside Our{" "}
+            <span className="text-gradient-gold">Facility</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            A modern rice bran processing plant engineered for purity, consistency,
-            and scale — the foundation behind every ingredient we deliver.
+            Precision equipment engineered for purity, consistency, and scale —
+            a section of the modern rice bran processing plant behind every
+            ingredient we deliver.
           </p>
         </motion.div>
 

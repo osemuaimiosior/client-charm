@@ -23,6 +23,13 @@ const Footer = () => {
               pharmaceutical industries.
             </p>
 
+            <a
+              href="mailto:info@dowie.com.ng"
+              className="inline-block text-primary-foreground/80 hover:text-gold transition-colors mb-6"
+            >
+              info@dowie.com.ng
+            </a>
+
             <div className="flex gap-4">
               {[Linkedin, Twitter, Instagram].map((Icon, index) => (
                 <a
