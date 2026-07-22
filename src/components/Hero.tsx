@@ -47,9 +47,10 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl"
           >
-            Dowie produces high-quality bioactive ingredients derived from rice —
-            including premium rice bran oil and gamma oryzanol — for the global
-            food, cosmetic, and pharmaceutical industries.
+            Dowie manufactures a full portfolio of bioactive ingredients derived
+            from rice — gamma oryzanol, tocopherols, phytosterols, ferulic acid,
+            rice bran wax, and refined rice bran oil — for the global food,
+            cosmetic, and pharmaceutical industries.
           </motion.p>
 
           <motion.div
@@ -76,9 +77,9 @@ const Hero = () => {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
+                { icon: Beaker, label: "Bioactive Ingredients", value: "6" },
                 { icon: Shield, label: "Food Safety", value: "ISO 22000" },
-                { icon: Beaker, label: "Gamma Oryzanol", value: "98%+" },
-                { icon: Globe, label: "Global Reach", value: "3 Industries" },
+                { icon: Globe, label: "Industries Served", value: "3" },
                 { icon: Leaf, label: "Naturally Sourced", value: "100%" },
               ].map((stat, index) => (
                 <div key={index} className="text-center md:text-left">
@@ -93,6 +94,7 @@ const Hero = () => {
               ))}
             </div>
           </motion.div>
+
         </div>
       </div>
 
