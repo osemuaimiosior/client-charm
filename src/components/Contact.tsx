@@ -49,11 +49,11 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                  <a 
-                    href="mailto:info@secooya.com.ng" 
+                  <a
+                    href="mailto:info@dowie.com.ng"
                     className="text-primary hover:text-gold transition-colors"
                   >
-                    info@secooya.com.ng
+                    info@dowie.com.ng
                   </a>
                 </div>
               </div>
