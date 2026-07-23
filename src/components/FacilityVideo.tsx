@@ -41,7 +41,7 @@ const FacilityVideo = () => {
           className="relative rounded-3xl overflow-hidden shadow-elevated border border-border/40 max-w-5xl mx-auto"
         >
           <video
-            src={facilityVideo.url}
+            src="/facility.mp4"
             autoPlay
             loop
             muted
