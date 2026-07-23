@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Factory, Play } from "lucide-react";
-import facilityVideo from "@/assets/facility.mp4.asset.json";
 
 const stats = [
   { value: "6", label: "Bioactive Ingredients" },
@@ -42,7 +41,7 @@ const FacilityVideo = () => {
           className="relative rounded-3xl overflow-hidden shadow-elevated border border-border/40 max-w-5xl mx-auto"
         >
           <video
-            src={facilityVideo.url}
+            src="/facility.mp4"
             autoPlay
             loop
             muted
