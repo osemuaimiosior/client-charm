@@ -25,9 +25,11 @@ const Contact = () => {
               <span className="text-gradient-gold">Conversation</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10">
-              Ready to explore how Dowie's rice bran oil and gamma oryzanol can
-              elevate your formulations? Reach out and our team will get back to you.
+              Ready to explore how Dowie's gamma oryzanol, tocopherols, phytosterols,
+              ferulic acid, rice bran wax, or refined rice bran oil can elevate your
+              formulations? Reach out and our team will get back to you.
             </p>
+
 
             {/* Contact Details */}
             <div className="space-y-6">
@@ -47,8 +49,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground mb-1">Email</h3>
-                  <a 
-                    href="mailto:info@secooya.com.ng" 
+                  <a
+                    href="mailto:info@dowie.com.ng"
                     className="text-primary hover:text-gold transition-colors"
                   >
                     info@dowie.com.ng

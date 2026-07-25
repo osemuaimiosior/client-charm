@@ -57,12 +57,6 @@ const Navbar = () => {
                 {link.label}
               </a>
             ))}
-            <Button 
-              variant={isScrolled ? "default" : "hero"} 
-              size="sm"
-            >
-              Get Started
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,9 +92,6 @@ const Navbar = () => {
                     {link.label}
                   </a>
                 ))}
-                <Button variant="hero" size="lg" className="mt-4">
-                  Get Started
-                </Button>
               </div>
             </div>
           </motion.div>

@@ -17,10 +17,19 @@ const Footer = () => {
               />
             </div>
             <p className="text-primary-foreground/70 max-w-md mb-6">
-              Producing high-quality bioactive ingredients derived from rice —
-              including rice bran oil and gamma oryzanol — for the global food,
-              cosmetic, and pharmaceutical industries.
+              Producing a full portfolio of bioactive ingredients derived from rice —
+              gamma oryzanol, tocopherols, phytosterols, ferulic acid, rice bran wax,
+              and refined rice bran oil — for the global food, cosmetic, and
+              pharmaceutical industries.
             </p>
+
+            <a
+              href="mailto:info@dowie.com.ng"
+              className="inline-block text-primary-foreground/80 hover:text-gold transition-colors mb-6"
+            >
+              info@dowie.com.ng
+            </a>
+
             <div className="flex gap-4">
               {[Linkedin, Twitter, Instagram].map((Icon, index) => (
                 <a

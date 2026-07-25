@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, Shield, Beaker, Globe } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-rice.jpg";
 
@@ -47,9 +48,10 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl"
           >
-            Dowie produces high-quality bioactive ingredients derived from rice —
-            including premium rice bran oil and gamma oryzanol — for the global
-            food, cosmetic, and pharmaceutical industries.
+            Dowie manufactures a full portfolio of bioactive ingredients derived
+            from rice — gamma oryzanol, tocopherols, phytosterols, ferulic acid,
+            rice bran wax, and refined rice bran oil — for the global food,
+            cosmetic, and pharmaceutical industries.
           </motion.p>
 
           <motion.div
@@ -58,13 +60,17 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <Button variant="hero" size="lg" className="group">
-              Explore Our Ingredients
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="heroOutline" size="lg">
-              Request a Sample
-            </Button>
+            <Link to="/products">
+              <Button variant="hero" size="lg" className="group">
+                Explore Our Ingredients
+                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <a href="#contact">
+              <Button variant="heroOutline" size="lg">
+                Request a Sample
+              </Button>
+            </a>
           </motion.div>
 
           {/* Trust Indicators */}
@@ -76,9 +82,9 @@ const Hero = () => {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {[
+                { icon: Beaker, label: "Bioactive Ingredients", value: "6" },
                 { icon: Shield, label: "Food Safety", value: "ISO 22000" },
-                { icon: Beaker, label: "Gamma Oryzanol", value: "98%+" },
-                { icon: Globe, label: "Global Reach", value: "3 Industries" },
+                { icon: Globe, label: "Industries Served", value: "3" },
                 { icon: Leaf, label: "Naturally Sourced", value: "100%" },
               ].map((stat, index) => (
                 <div key={index} className="text-center md:text-left">
@@ -93,6 +99,7 @@ const Hero = () => {
               ))}
             </div>
           </motion.div>
+
         </div>
       </div>
 
