@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Factory, Play } from "lucide-react";
+import facilityVideo from "@/assets/facility.mp4.asset.json";
 
 const stats = [
   { value: "6", label: "Bioactive Ingredients" },
